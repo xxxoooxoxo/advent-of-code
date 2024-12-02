@@ -20,7 +20,7 @@ func main() {
 	file, err := os.Open("input.txt")
 	defer file.Close()
 	if err != nil {
-		// panic(err)
+		panic(err)
 	}
 
 	// split out column 1 & column 2
